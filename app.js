@@ -134,5 +134,5 @@ app.use((req, res) => {
 })
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log('port 3000');
+    console.log(`port ${port}`);
 })
