@@ -1,0 +1,78 @@
+<head>
+    <style>
+        body {
+            background-color: #8c99a3;
+            background-image: linear-gradient(60deg, whitesmoke 50%, #8c99a3 50%);
+        }
+        
+        .btn {
+            background-color: #37367f;
+            color: white;
+        }
+        
+        .card {
+            font-family: 'Bebas Neue', cursive;
+            box-shadow: 5px 5px;
+            border-radius: 10px;
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: #e5efee;
+            width: 70vw;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            padding-bottom: 5vh;
+            box-shadow: 10px;
+        }
+        
+        #regbtn {
+            padding: 10px;
+            color: white;
+            background-color: cornflowerblue;
+            border-radius: 8px;
+            border: transparent;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<div class="card">
+
+    <div class=" card-body mx-auto justfiy-content-center" style="width: 45vw;margin-top: 10px;">
+
+        <h1 class="mx-auto ">LOGIN</h1>
+
+        <form action="/login" method="POST" class="validated-form was-validated">
+            <div class=" mb-3 ">
+
+                <label class="form-lable" for="username">username</label>
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="form-control" type="username" id="username" name="username" required>
+
+
+
+
+            </div>
+
+
+            <div class="mb-3 ">
+
+                <label class="form-lable" for="password">password</label>
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="form-control " type="password" id="password" name="password" required>
+
+
+
+
+            </div>
+            <button class="btn">login</button>
+
+        </form>
+        <div>
+            <br>
+            <p>
+                or click here to register </p>
+            <a id="regbtn" href="/register">register</a>
+            <!-- <button id="regbtn">register</button> -->
+        </div>
+
+    </div>
+</div>

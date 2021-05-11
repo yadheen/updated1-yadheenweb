@@ -1,0 +1,16 @@
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255)), url("https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /*position: relative;*/
+    /*background-repeat: no-repeat; object-fit: cover;*/
+    /*height: 400px; background-size: cover; color: white; padding: 20px;*/
+}
+
+h1 {
+    color: green;
+    background-color: red;
+}

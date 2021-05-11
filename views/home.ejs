@@ -1,0 +1,263 @@
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/cssfiles/home.css">
+
+    <style>
+    body {
+            background-color: #495c6c;
+        }
+        
+        #image {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgb(0, 0, 0, 0.25), #495c6c), url("https://images.unsplash.com/photo-1616560091035-863cdf9e23e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80://images.unsplash.com/photo-1555178364-6c1f870e3349?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIzfHxjb21wdXRlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+            /* background: no-repeat center center fixed; */
+        }
+        
+        #welcome {
+            font-family: 'Zen Dots', cursive;
+            font-size: 7vw;
+            color: #424242;
+            /* margin: auto; */
+            /* justify-content: center; */
+            position: absolute;
+            text-align: center;
+            top: 50vh;
+            /* top: 50%;*/
+            left: 27%;
+            right: 27%;
+            background-color: #f8f8f8;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            /* transform: translate(-50%, -50%); */
+        }
+        
+        @media (max-width:800px) {
+            .rows {
+                padding: 10%;
+                gap: 40px;
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+        
+        @media(min-width:1200px) {
+            .rows {
+                padding: 10%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                grid-auto-rows: minmax(150px, auto);
+            }
+            .column1 {
+                grid-column: 1;
+                height: 40vh;
+                padding-right: 5vw;
+                text-align: center;
+            }
+            .column2 {
+                grid-column: 2;
+                height: 40vh;
+                padding-left: 5vw;
+                text-align: center;
+            }
+        }
+        
+        .card1 {
+            background-color: #495c6c;
+            color: white;
+            /* background-image: url("https://www.ostraining.com//images/coding/html5-css3-hd.jpg"); */
+            height: 40vh;
+            background-repeat: no-repeat;
+            background-position: cover;
+            border-radius: 15px;
+            justify-content: center;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .card2 {
+            color: white;
+            font-size: 6vh;
+            font-weight: 800;
+            background-color: #495c6c;
+            height: 40vh;
+            border-radius: 15px;
+            justify-content: center;
+            text-align: center;
+            vertical-align: middle;
+        }
+        /*         
+        .card-body3 {
+            border-radius: 15px;
+            background-color: #495c6c;
+             background-image: url(" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tub-27EnqWXLaqHhp0CiAVLC2aWiFbxnCQ&usqp=CAU "); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40vh;
+            color: white;
+        } */
+    }
+    section {
+        background-color: white;
+    }
+    @media(max-width:800px) {
+        #qt {
+            margin-top: 50px;
+            font-size: 5vh;
+            color: white;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+        
+        #triangle {
+            width: 100%;
+            border-bottom: 100px solid white;
+            border-right: 100px solid transparent;
+        }
+    }
+    @media(min-width:900px) {
+        #con {
+            margin-top: 10vh;
+            padding: 20px;
+            background-image: linear-gradient(50deg, whitesmoke 50%, #495c6c 50%);
+        }
+        
+        #conp {
+            margin: auto;
+            width: 70%;
+            text-align: center;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+        
+        #qt {
+            margin-top: 100px;
+            font-size: 10vh;
+            color: white;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+        
+        #triangle {
+            width: 100%;
+            border-bottom: 150px solid white;
+            border-right: 150px solid transparent;
+        }
+    }
+    /* #con:hover {
+            background-image: linear-gradient(50deg, #495c6c 50%, white 50%);
+            transition-duration: 60ms;
+            transition-delay: 200ms;
+        } */
+    </style>
+
+</head>
+
+
+
+<div id="image"></div>
+<div>
+
+    <h1 id="welcome">welcome</h1>
+
+</div>
+
+<br>
+<div>
+    <h1 id="qt">"THE MIND IS EVERYTHING. WHAT YOU THINK YOU BECOME"</h1>
+</div>
+<br>
+
+<div id="con">
+    <p id="conp" style="font-size:4vh;  font-weight: 500;"> I AM YADHEENDRAN. I AM DOING MY UG IN COMPUTER SCIENCE AND ENGINEERING IN K.RAMAKRISHNAN COLLEGE OF ENGINEERING. I AM FAMILIAR WITH C,C++,PYTHON,HTML,CSS,JS,NODEJS,JAVA. AND THIS IS MY FIRST PROJECT.
+    </p>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="container-fluid" style="background-color: #f5f5f5;">
+
+    <div class="rows">
+        <div class="column1">
+            <div class="card1">
+                <div class="card-body">
+                    <h1 style="vertical-align: middle;
+                    
+                    font-weight: 700;
+                    font-size: 8vh;
+                    
+                    ">FRONTEND</h1>
+                    <h3>HTML</h3>
+                    <h3>CSS</h3>
+                    <h3>EJS</h3>
+                    <h3>BOOTSTRAP</h3>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="column2">
+            <div class="card2">
+                <div class="card-body" style="vertical-align: middle; padding-top: 5%;">
+
+                    <h1 style="
+                    /* padding-top: 25%; */
+                    font-weight: 700;
+                    font-size: 8vh;
+                    
+                    ">BACKEND</h1>
+                    <h3>NODEJS</h3>
+                    <h3>MONGODB</h3>
+                    <h3>PASSPORT</h3>
+                    <h3>EXPRESS</h3>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+
+<div id="triangle">
+    <div style="position: absolute; justify-content: center; text-align: center; padding-bottom: 10px; padding-left: 45%;">
+        <h2>contact:</h2>
+        <a style="padding: 10px;" href="https://www.instagram.com/yadheen_/"><i><img src="https://image.flaticon.com/icons/png/128/1384/1384031.png"  width="40vw"></i></a>
+        <a style="padding: 10px;" href="https://www.linkedin.com/in/yadheendran-k-0142551b5/"><i><img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40vw"></i></a>
+
+
+    </div>
+
+</div>

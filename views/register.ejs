@@ -1,0 +1,97 @@
+<head>
+
+    <style>
+        body {
+            background-image: linear-gradient(120deg, #cc2133 50%, #8c99a3 50%);
+            background-size: 100%, 100% 14px;
+        }
+        
+        .btn {
+            background-color: #fc504c;
+        }
+        
+        .card {
+            font-family: 'Bebas Neue', cursive;
+            box-shadow: 5px 5px;
+            border-radius: 10px;
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: #fde3e4;
+            width: 70vw;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            padding-bottom: 5vh;
+            box-shadow: gray;
+        }
+        
+        #regbtn {
+            padding: 10px;
+            color: white;
+            background-color: cornflowerblue;
+            border-radius: 8px;
+            border: transparent;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+
+<div class="card">
+
+
+    <div class=" card-body mx-auto justfiy-content-center" style="width: 45vw;margin-top: 10px;">
+
+        <h1 class="mx-auto">REGISTER</h1>
+
+        <form action="/register" method="POST" class="validated-form was-validated">
+            <div class=" mb-3 ">
+
+                <label class="form-lable" for="username">username</label>
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="form-control" type="text" id="username" name="username" required>
+
+                <div class="valid-feedback ">
+                    nice
+                </div>
+
+
+            </div>
+
+            <div class="mb-3 ">
+
+                <label class="form-lable " for="email">email</label>
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="form-control " type="email" id="email" name="email" required>
+
+
+                <div class="valid-feedback ">
+                    nice
+                </div>
+
+
+            </div>
+
+
+            <div class="mb-3 ">
+
+                <label class="form-lable" for="password">password</label>
+                <input style="font-family: Georgia, 'Times New Roman', Times, serif;" class="form-control" type="password" id="password" name="password" required>
+
+
+                <div class="valid-feedback">
+                    nice
+                </div>
+
+            </div>
+            <button class="btn">register</button>
+
+        </form>
+        <div>
+            <br>
+            <p>
+                or click here to login </p>
+            <a id="regbtn" href="/login">login</a>
+
+        </div>
+
+    </div>
+</div>
