@@ -14,7 +14,7 @@ router.get('/register', async(req, res) => {
 
 router.post('/register', catchasync(async(req, res, next) => {
     try {
-        console.log(req.body)
+
         const username = req.body.username;
         const email = req.body.email;
 
