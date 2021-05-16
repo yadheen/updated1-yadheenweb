@@ -69,7 +69,6 @@ router.get('/secret', async(req, res) => {
 })
 router.get('/logout', async(req, res) => {
     req.logout();
-    // req.flash("success", "arigoto gosaimas! Good bye!");
     res.redirect("/");
 })
 

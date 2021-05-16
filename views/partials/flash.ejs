@@ -3,7 +3,6 @@
         .container {
             padding-left: 13%;
             padding-right: 5%;
-            /* padding: auto; */
             margin-left: 28%;
             margin-right: 28%;
             justify-content: center;
@@ -16,15 +15,13 @@
 
     <div class=" container mt-5 alert alert-success alert-dismissible fade show  " class='mt-5 justify-content-center' role="alert">
         <%= success %>
-            <!-- <button type="button" class="btn-close" aria-label="Close"></button> -->
-            <!-- <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button> -->
+
     </div>
     <% } %>
         <% if(error && error.length) { %>
 
             <div class="container mt-5   alert alert-danger alert-dismissible fade show" role="alert">
                 <%= error %>
-                    <!-- <button type="button" class="btn-close" aria-label="Close"></button> -->
-                    <!-- <button type="button" class="btn-close " data-dismiss="alert" aria-label="Close"></button> -->
+
             </div>
             <% } %>
