@@ -68,16 +68,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-// passport.use(new local(
-//     function(email, password, done) {
-//         User.findOne({ email: email }, function(err, user) {
-//             if (err) { return done(err); }
-//             if (!user) { return done(null, false); }
-//             if (!user.verifyPassword(password)) { return done(null, false); }
-//             return done(null, user);
-//         });
-//     }
-// ));
 
 
 // app.use(mongosanitize);
@@ -89,7 +79,7 @@ passport.deserializeUser(user.deserializeUser());
 app.use(express.json());
 
 
-// 'mongodb://localhost:27017/newweb'
+
 mongoose.connect(dburl, {
     useNewUrlParser: true,
     useCreateIndex: true,
